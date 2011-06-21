@@ -1,4 +1,4 @@
-#!/pot/local/bin/perl -w
+#!/opt/local/bin/perl -w
 # Ask for a hex number to convert to a dec
 # Ask for a oct number to convert to dec
 use strict;

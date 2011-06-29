@@ -9,13 +9,8 @@ my $guess = <STDIN>;
 
 if ($target_num == $guess){
 	print "That's it, you guessed right!\n";
-	exit;
-}
-if ($guess > $target_num){
+} elsif ($guess > $target_num){
 	print "Your number is larger than my number.\n";
-	exit;
-}
-if ($guess < $target_num){
+} else {
 	print "Your number is less than my number.\n";
-	exit;
 }

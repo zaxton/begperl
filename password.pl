@@ -10,9 +10,8 @@ chomp $guess;
 
 if ($guess eq $password){
 	print "You guessed right!\n";
-}
-if ($guess ne $password){
-	print "Go away!\n";
+} else {
+	die "Go away!\n";
 }
 
 

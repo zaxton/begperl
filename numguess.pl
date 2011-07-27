@@ -2,15 +2,12 @@
 # guessnum.pl => Number guessing game
 use strict;
 
-my $target_num = 12;
-print "Guess my number!\n";
-print "Enter your guess: ";
-my $guess = <STDIN>;
+my $number = 12; 
 
-if ($target_num == $guess){
-	print "That's it, you guessed right!\n";
-} elsif ($guess > $target_num){
-	print "Your number is larger than my number.\n";
-} else {
-	print "Your number is less than my number.\n";
+print "Guess my number!\n";
+
+while (<STDIN>){
+	last if $_ == $number;
+	print "You didn't get it! Please try again...\n";
 }
+print "Congrates! You got it!\n";
